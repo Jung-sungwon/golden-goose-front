@@ -4,6 +4,7 @@ import Typing from "@/components/Typing";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { NextSeo } from "next-seo";
 
 function landing() {
   const [mid, setMid] = useState(false);
@@ -23,6 +24,10 @@ function landing() {
 
   return (
     <div>
+      <NextSeo
+        title="golden_goose"
+        description="금 데이터를 제공하는 커뮤니티입니다."
+      />
       <section className={style.titleBoard}>
         <Typing />
       </section>
